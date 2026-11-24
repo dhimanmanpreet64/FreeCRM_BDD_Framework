@@ -1,35 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="23.463122">
-    <testcase classname="Free CRM Contact Page Feature" name="Free CRM contact page test scenario" time="8.156805">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="8.174039">
+    <testcase classname="Free CRM Deal Page Feature" name="Free CRM deals page test scenario" time="8.174039">
         <system-out><![CDATA[Given user is already on Login Page.........................................passed
 When title of login page is Free CRM software for customer relationship management, sales, and support..passed
-Then user enters the "Manpreet0079" and "Dhiman&2612".......................passed
+Then user enters the username and password..................................passed
 Then user clicks on login button............................................passed
 Then user is on home page...................................................passed
-Then user moves to the new contacts page....................................passed
-Then user enters contacts detail "Dev" and "Matharu" and "Ebay".............passed
-Then close the browser......................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Free CRM Contact Page Feature" name="Free CRM contact page test scenario 2" time="7.745453">
-        <system-out><![CDATA[Given user is already on Login Page.........................................passed
-When title of login page is Free CRM software for customer relationship management, sales, and support..passed
-Then user enters the "Manpreet0079" and "Dhiman&2612".......................passed
-Then user clicks on login button............................................passed
-Then user is on home page...................................................passed
-Then user moves to the new contacts page....................................passed
-Then user enters contacts detail "Diya" and "Sharma" and "Meesho"...........passed
-Then close the browser......................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Free CRM Contact Page Feature" name="Free CRM contact page test scenario 3" time="7.560864">
-        <system-out><![CDATA[Given user is already on Login Page.........................................passed
-When title of login page is Free CRM software for customer relationship management, sales, and support..passed
-Then user enters the "Manpreet0079" and "Dhiman&2612".......................passed
-Then user clicks on login button............................................passed
-Then user is on home page...................................................passed
-Then user moves to the new contacts page....................................passed
-Then user enters contacts detail "Nadar" and "Kaur" and "Google"............passed
+Then user moves to the new deals page.......................................passed
+Then user enters deals detail...............................................passed
 Then close the browser......................................................passed
 ]]></system-out>
     </testcase>

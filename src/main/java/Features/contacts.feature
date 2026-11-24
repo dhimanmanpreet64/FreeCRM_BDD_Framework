@@ -12,10 +12,10 @@ Then user enters contacts detail "<firstname>" and "<lastname>" and "<companynam
 Then close the browser
 
 #your steps should we different if we use the same words then it gives the same step definition error
-
+# this data is applicable for the entire test case
 Examples: 
      | username     | password    | firstname | lastname | companyname |
      | Manpreet0079 | Dhiman&2612 | Dev       | Matharu  | Ebay        |
-     | Manpreet0079 | Dhiman&2612 |Diya       | Sharma   | Meesho      |
+     | Manpreet0079 | Dhiman&2612 | Diya      | Sharma   | Meesho      |
      | Manpreet0079 | Dhiman&2612 | Nadar     | Kaur     | Google      |
      
