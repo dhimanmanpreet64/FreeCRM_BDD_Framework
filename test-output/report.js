@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/QA/Selenium_Workspace1/FreeCrmBDDFramework/src/main/java/Features/deals.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/QA/Selenium_Workspace1/FreeCrmBDDFramework/src/main/java/Features/dealmap.feature");
 formatter.feature({
   "line": 1,
   "name": "Free CRM Deal Page Feature",
@@ -30,104 +30,132 @@ formatter.step({
   "rows": [
     {
       "cells": [
+        "username",
+        "password"
+      ],
+      "line": 8
+    },
+    {
+      "cells": [
         "Manpreet0079",
         "Dhiman\u00262612"
       ],
-      "line": 8
+      "line": 9
     }
   ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "user clicks on login button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 11,
-  "name": "user is on home page",
+  "name": "user clicks on login button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 12,
+  "name": "user is on home page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
   "name": "user moves to the new deals page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 14,
+  "line": 15,
   "name": "user enters deals detail",
   "rows": [
     {
       "cells": [
-        "test deal 1",
+        "title",
+        "amount",
+        "probability",
+        "commission"
+      ],
+      "line": 16
+    },
+    {
+      "cells": [
+        "test deal 2",
         "1000",
         "90",
         "80"
       ],
-      "line": 15
+      "line": 17
+    },
+    {
+      "cells": [
+        "test deal 3",
+        "2000",
+        "70",
+        "20"
+      ],
+      "line": 18
+    },
+    {
+      "cells": [
+        "test deal 4",
+        "5000",
+        "50",
+        "30"
+      ],
+      "line": 19
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 17,
+  "line": 21,
   "name": "close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DealsStepDefiniton.user_already_on_login_page()"
+  "location": "DealsStepWithMapDefinition.user_already_on_login_page()"
 });
 formatter.result({
-  "duration": 4145337200,
-  "status": "passed"
+  "duration": 966334200,
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no \u0027moz:firefoxOptions.binary\u0027 capability provided, and no binary flag set on the command line \nHost info: host: \u0027MATHARU96\u0027, ip: \u002710.0.0.108\u0027\nBuild info: version: \u00274.52.0\u0027, revision: \u00275b37fd4 5b37fd4d98c08d6a43a0790417f91b8f6f32fb5c\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCommand: [null, newSession {capabilities\u003d[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {prefs: {remote.active-protocols: 1}}}]}]\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:228)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:705)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:310)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:260)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:230)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:129)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:110)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:90)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:86)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:76)\r\n\tat stepDefinitions.DealsStepWithMapDefinition.user_already_on_login_page(DealsStepWithMapDefinition.java:27)\r\n\tat ✽.Given user is already on Login Page(C:/QA/Selenium_Workspace1/FreeCrmBDDFramework/src/main/java/Features/dealmap.feature:5)\r\n",
+  "status": "failed"
 });
 formatter.match({
-  "location": "DealsStepDefiniton.title_of_login_page_is_free_crm()"
+  "location": "DealsStepWithMapDefinition.title_of_login_page_is_free_crm()"
 });
 formatter.result({
-  "duration": 39966500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "DealsStepDefiniton.user_enters_the_username_and_password(DataTable)"
+  "location": "DealsStepWithMapDefinition.user_enters_the_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 248881600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "DealsStepDefiniton.user_clicks_on_login_button()"
+  "location": "DealsStepWithMapDefinition.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 118484900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "DealsStepDefiniton.user_is_on_home_page()"
+  "location": "DealsStepWithMapDefinition.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 2009164100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "DealsStepDefiniton.user_moves_to_the_new_deals_page()"
+  "location": "DealsStepWithMapDefinition.user_moves_to_the_new_deals_page()"
 });
 formatter.result({
-  "duration": 423567700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "DealsStepDefiniton.user_enters_deals_detail(DataTable)"
+  "location": "DealsStepWithMapDefinition.user_enters_deals_detail(DataTable)"
 });
 formatter.result({
-  "duration": 505547700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "DealsStepDefiniton.close_the_window()"
+  "location": "DealsStepWithMapDefinition.close_the_window()"
 });
 formatter.result({
-  "duration": 683089700,
-  "status": "passed"
+  "status": "skipped"
 });
 });

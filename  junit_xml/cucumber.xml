@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="8.174039">
-    <testcase classname="Free CRM Deal Page Feature" name="Free CRM deals page test scenario" time="8.174039">
-        <system-out><![CDATA[Given user is already on Login Page.........................................passed
-When title of login page is Free CRM software for customer relationship management, sales, and support..passed
-Then user enters the username and password..................................passed
-Then user clicks on login button............................................passed
-Then user is on home page...................................................passed
-Then user moves to the new deals page.......................................passed
-Then user enters deals detail...............................................passed
-Then close the browser......................................................passed
-]]></system-out>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.966334">
+    <testcase classname="Free CRM Deal Page Feature" name="Free CRM deals page test scenario" time="0.966334">
+        <failure message="org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line &#10;Host info: host: 'MATHARU96', ip: '10.0.0.108'&#10;Build info: version: '4.52.0', revision: '5b37fd4 5b37fd4d98c08d6a43a0790417f91b8f6f32fb5c'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {prefs: {remote.active-protocols: 1}}}]}]&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:228)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:705)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:310)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:260)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:230)&#13;&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:129)&#13;&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:110)&#13;&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:90)&#13;&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:86)&#13;&#10;&#9;at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:76)&#13;&#10;&#9;at stepDefinitions.DealsStepWithMapDefinition.user_already_on_login_page(DealsStepWithMapDefinition.java:27)&#13;&#10;&#9;at ✽.Given user is already on Login Page(C:/QA/Selenium_Workspace1/FreeCrmBDDFramework/src/main/java/Features/dealmap.feature:5)&#13;&#10;"><![CDATA[Given user is already on Login Page.........................................failed
+When title of login page is Free CRM software for customer relationship management, sales, and support..skipped
+Then user enters the username and password..................................skipped
+Then user clicks on login button............................................skipped
+Then user is on home page...................................................skipped
+Then user moves to the new deals page.......................................skipped
+Then user enters deals detail...............................................skipped
+Then close the browser......................................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'MATHARU96', ip: '10.0.0.108'
+Build info: version: '4.52.0', revision: '5b37fd4 5b37fd4d98c08d6a43a0790417f91b8f6f32fb5c'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {prefs: {remote.active-protocols: 1}}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:228)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:705)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:310)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:260)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:230)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:129)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:90)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:86)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:76)
+	at stepDefinitions.DealsStepWithMapDefinition.user_already_on_login_page(DealsStepWithMapDefinition.java:27)
+	at ✽.Given user is already on Login Page(C:/QA/Selenium_Workspace1/FreeCrmBDDFramework/src/main/java/Features/dealmap.feature:5)
+]]></failure>
     </testcase>
 </testsuite>
