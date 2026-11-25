@@ -1,166 +1,378 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "Free CRM deals page test scenario",
+        "line": 5,
+        "name": "Login with the correct username and password",
         "description": "",
-        "id": "free-crm-deal-page-feature;free-crm-deals-page-test-scenario",
+        "id": "free-crm-tagging-tests;login-with-the-correct-username-and-password",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 966334200,
-              "error_message": "org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no \u0027moz:firefoxOptions.binary\u0027 capability provided, and no binary flag set on the command line \nHost info: host: \u0027MATHARU96\u0027, ip: \u002710.0.0.108\u0027\nBuild info: version: \u00274.52.0\u0027, revision: \u00275b37fd4 5b37fd4d98c08d6a43a0790417f91b8f6f32fb5c\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002714.0.2\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCommand: [null, newSession {capabilities\u003d[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {prefs: {remote.active-protocols: 1}}}]}]\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:228)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:705)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:310)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:260)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:230)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:129)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:110)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:90)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:86)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:76)\r\n\tat stepDefinitions.DealsStepWithMapDefinition.user_already_on_login_page(DealsStepWithMapDefinition.java:27)\r\n\tat ✽.Given user is already on Login Page(C:/QA/Selenium_Workspace1/FreeCrmBDDFramework/src/main/java/Features/dealmap.feature:5)\r\n",
-              "status": "failed"
-            },
-            "line": 5,
-            "name": "user is already on Login Page",
-            "match": {
-              "location": "DealsStepWithMapDefinition.user_already_on_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
+              "duration": 84548500,
+              "status": "passed"
             },
             "line": 6,
-            "name": "title of login page is Free CRM software for customer relationship management, sales, and support.",
+            "name": "user enters valid username and password",
             "match": {
-              "location": "DealsStepWithMapDefinition.title_of_login_page_is_free_crm()"
+              "location": "TaggingStepDefinition.user_enters_valid_username_and_password()"
             },
-            "keyword": "When "
-          },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@End2End"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "create new company",
+        "description": "",
+        "id": "free-crm-tagging-tests;create-new-company",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 45200,
+              "status": "passed"
             },
-            "line": 7,
-            "name": "user enters the username and password",
+            "line": 14,
+            "name": "this is new company link",
             "match": {
-              "location": "DealsStepWithMapDefinition.user_enters_the_username_and_password(DataTable)"
+              "location": "TaggingStepDefinition.this_is_new_company_link()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "password"
-                ],
-                "line": 8
-              },
-              {
-                "cells": [
-                  "Manpreet0079",
-                  "Dhiman\u00262612"
-                ],
-                "line": 9
-              }
-            ],
-            "keyword": "Then "
-          },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
           {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 11,
-            "name": "user clicks on login button",
-            "match": {
-              "location": "DealsStepWithMapDefinition.user_clicks_on_login_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
             "line": 12,
-            "name": "user is on home page",
-            "match": {
-              "location": "DealsStepWithMapDefinition.user_is_on_home_page()"
-            },
-            "keyword": "Then "
-          },
+            "name": "@End2End"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "create new deal",
+        "description": "",
+        "id": "free-crm-tagging-tests;create-new-deal",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 45500,
+              "status": "passed"
             },
-            "line": 13,
-            "name": "user moves to the new deals page",
+            "line": 18,
+            "name": "this is new deal link",
             "match": {
-              "location": "DealsStepWithMapDefinition.user_moves_to_the_new_deals_page()"
+              "location": "TaggingStepDefinition.this_is_new_deal_link()"
             },
-            "keyword": "Then "
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@SmokeTest"
           },
           {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "user enters deals detail",
-            "match": {
-              "location": "DealsStepWithMapDefinition.user_enters_deals_detail(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "title",
-                  "amount",
-                  "probability",
-                  "commission"
-                ],
-                "line": 16
-              },
-              {
-                "cells": [
-                  "test deal 2",
-                  "1000",
-                  "90",
-                  "80"
-                ],
-                "line": 17
-              },
-              {
-                "cells": [
-                  "test deal 3",
-                  "2000",
-                  "70",
-                  "20"
-                ],
-                "line": 18
-              },
-              {
-                "cells": [
-                  "test deal 4",
-                  "5000",
-                  "50",
-                  "30"
-                ],
-                "line": 19
-              }
-            ],
-            "keyword": "Then "
-          },
+            "line": 16,
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "create new case",
+        "description": "",
+        "id": "free-crm-tagging-tests;create-new-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 32100,
+              "status": "passed"
             },
-            "line": 21,
-            "name": "close the browser",
+            "line": 26,
+            "name": "this is new case link",
             "match": {
-              "location": "DealsStepWithMapDefinition.close_the_window()"
+              "location": "TaggingStepDefinition.this_is_new_case_link()"
             },
-            "keyword": "Then "
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 24,
+            "name": "@SmokeTest"
+          },
+          {
+            "line": 24,
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "create new search",
+        "description": "",
+        "id": "free-crm-tagging-tests;create-new-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 53800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "this is new seacrh link",
+            "match": {
+              "location": "TaggingStepDefinition.this_is_new_seacrh_link()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@SmokeTest"
+          },
+          {
+            "line": 32,
+            "name": "@End2End"
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "create new report",
+        "description": "",
+        "id": "free-crm-tagging-tests;create-new-report",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 47700,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "this is new reposrt link",
+            "match": {
+              "location": "TaggingStepDefinition.this_is_new_reposrt_link()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 40,
+            "name": "@SmokeTest"
+          },
+          {
+            "line": 40,
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 45,
+        "name": "create new docs",
+        "description": "",
+        "id": "free-crm-tagging-tests;create-new-docs",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 53500,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "this is new docs link",
+            "match": {
+              "location": "TaggingStepDefinition.this_is_new_docs_link()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 44,
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 49,
+        "name": "create new form",
+        "description": "",
+        "id": "free-crm-tagging-tests;create-new-form",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 36800,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "this is new form link",
+            "match": {
+              "location": "TaggingStepDefinition.this_is_new_form_link()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 48,
+            "name": "@End2End"
+          }
+        ]
+      },
+      {
+        "line": 53,
+        "name": "create new alert",
+        "description": "",
+        "id": "free-crm-tagging-tests;create-new-alert",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 37400,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "this is new alert link",
+            "match": {
+              "location": "TaggingStepDefinition.this_is_new_alert_link()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 52,
+            "name": "@SmokeTest"
+          },
+          {
+            "line": 52,
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 61,
+        "name": "verify CRMPRO logo",
+        "description": "",
+        "id": "free-crm-tagging-tests;verify-crmpro-logo",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 33200,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "this is to verify the logo",
+            "match": {
+              "location": "TaggingStepDefinition.this_is_to_verify_the_logo()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 60,
+            "name": "@SmokeTest"
+          },
+          {
+            "line": 60,
+            "name": "@End2End"
+          }
+        ]
+      },
+      {
+        "line": 69,
+        "name": "create new resources",
+        "description": "",
+        "id": "free-crm-tagging-tests;create-new-resources",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 32600,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "this is new resources link",
+            "match": {
+              "location": "TaggingStepDefinition.this_is_new_resources_link()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 68,
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 73,
+        "name": "close the browser",
+        "description": "",
+        "id": "free-crm-tagging-tests;close-the-browser",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 79800,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "this is to close the browser",
+            "match": {
+              "location": "TaggingStepDefinition.this_is_to_close_the_browser()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 72,
+            "name": "@End2End"
           }
         ]
       }
     ],
-    "name": "Free CRM Deal Page Feature",
+    "name": "Free CRM tagging tests",
     "description": "",
-    "id": "free-crm-deal-page-feature",
+    "id": "free-crm-tagging-tests",
     "keyword": "Feature",
-    "uri": "C:/QA/Selenium_Workspace1/FreeCrmBDDFramework/src/main/java/Features/dealmap.feature"
+    "uri": "C:/QA/Selenium_Workspace1/FreeCrmBDDFramework/src/main/java/Features/tagging.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Funtional"
+      }
+    ]
   }
 ]

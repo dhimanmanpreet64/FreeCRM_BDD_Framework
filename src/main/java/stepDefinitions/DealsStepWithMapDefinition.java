@@ -105,6 +105,7 @@ public class DealsStepWithMapDefinition {
 		        newDeal);
 		System.out.println(driver.getCurrentUrl());
 		System.out.println(driver.getTitle());
+		
 	}
 	}
 
